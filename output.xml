@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.9 on win32)" generated="20230314 21:54:47.000" rpa="false" schemaversion="3">
+<suite id="s1" name="Prompt" source="D:\RobotFramewok\prompt.robot">
+<test id="s1-t1" name="I need confirm Prompt Box is appear WAIT EXPLICIT" line="11">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${urladdress}</arg>
+<arg>${browsertype}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230314 21:54:47.167" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/alerts'.</msg>
+<status status="PASS" starttime="20230314 21:54:47.167" endtime="20230314 21:54:55.498"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230314 21:54:55.499" endtime="20230314 21:54:55.625"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id="alertButton"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230314 21:54:55.626" endtime="20230314 21:54:55.656"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="alertButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230314 21:54:55.657" level="INFO">Clicking element '//button[@id="alertButton"]'.</msg>
+<status status="PASS" starttime="20230314 21:54:55.656" endtime="20230314 21:54:55.709"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>You clicked a button</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20230314 21:54:55.709" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230314 21:54:55.709" endtime="20230314 21:54:55.713"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>action=ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230314 21:54:55.714" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg timestamp="20230314 21:55:01.087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230314 21:55:01.087" level="FAIL">Alert not found in 5 seconds.</msg>
+<status status="FAIL" starttime="20230314 21:54:55.714" endtime="20230314 21:55:01.097"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230314 21:55:01.098" endtime="20230314 21:55:03.206"/>
+</kw>
+<status status="FAIL" starttime="20230314 21:54:47.166" endtime="20230314 21:55:03.207">Alert not found in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="I need confirm Prompt Box is appear WAIT IMPLICIT" line="19">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${urladdress}</arg>
+<arg>${browsertype}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230314 21:55:03.210" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/alerts'.</msg>
+<status status="PASS" starttime="20230314 21:55:03.209" endtime="20230314 21:55:12.106"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230314 21:55:12.107" endtime="20230314 21:55:12.233"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230314 21:55:14.238" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230314 21:55:12.234" endtime="20230314 21:55:14.238"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id="alertButton"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230314 21:55:14.239" endtime="20230314 21:55:14.273"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="alertButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230314 21:55:14.274" level="INFO">Clicking element '//button[@id="alertButton"]'.</msg>
+<status status="PASS" starttime="20230314 21:55:14.274" endtime="20230314 21:55:14.321"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>You clicked a button</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20230314 21:55:14.322" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230314 21:55:14.322" endtime="20230314 21:55:14.327"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>action=ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230314 21:55:14.328" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg timestamp="20230314 21:55:19.666" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230314 21:55:19.666" level="FAIL">Alert not found in 5 seconds.</msg>
+<status status="FAIL" starttime="20230314 21:55:14.327" endtime="20230314 21:55:19.666"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230314 21:55:19.667" endtime="20230314 21:55:21.795"/>
+</kw>
+<status status="FAIL" starttime="20230314 21:55:03.209" endtime="20230314 21:55:21.796">Alert not found in 5 seconds.</status>
+</test>
+<test id="s1-t3" name="I clicked the ok button in prompt box" line="30">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${urladdress}</arg>
+<arg>${browsertype}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230314 21:55:21.799" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/alerts'.</msg>
+<status status="PASS" starttime="20230314 21:55:21.798" endtime="20230314 21:55:31.972"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230314 21:55:31.973" endtime="20230314 21:55:32.209"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id="alertButton"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230314 21:55:32.209" endtime="20230314 21:55:32.236"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="alertButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230314 21:55:32.237" level="INFO">Clicking element '//button[@id="alertButton"]'.</msg>
+<status status="PASS" starttime="20230314 21:55:32.236" endtime="20230314 21:55:32.276"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>action=ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230314 21:55:32.277" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230314 21:55:32.277" endtime="20230314 21:55:32.280"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230314 21:55:35.292" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230314 21:55:32.280" endtime="20230314 21:55:35.292"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230314 21:55:35.293" endtime="20230314 21:55:37.396"/>
+</kw>
+<status status="PASS" starttime="20230314 21:55:21.798" endtime="20230314 21:55:37.397"/>
+</test>
+<status status="FAIL" starttime="20230314 21:54:47.001" endtime="20230314 21:55:37.399"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="2" skip="0" id="s1" name="Prompt">Prompt</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

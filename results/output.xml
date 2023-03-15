@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.9 on win32)" generated="20230314 19:26:14.954" rpa="false" schemaversion="3">
+<suite id="s1" name="RobotFramewok" source="D:\RobotFramewok">
+<suite id="s1-s1" name="Inputtext" source="D:\RobotFramewok\inputtext.robot">
+<test id="s1-s1-t1" name="Iam filled TextBox using Jenar K" line="12">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230314 19:26:15.176" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<msg timestamp="20230314 19:26:15.178" level="INFO">Firefox driver log is always forced to to: D:\RobotFramewok\results\geckodriver-1.log</msg>
+<status status="PASS" starttime="20230314 19:26:15.174" endtime="20230314 19:26:20.863"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230314 19:26:20.864" endtime="20230314 19:26:21.135"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="newButtonName"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230314 19:26:21.137" level="INFO">Typing text 'Jenar K' into text field '//input[@id="newButtonName"]'.</msg>
+<msg timestamp="20230314 19:26:21.194" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230314 19:26:21.196" level="FAIL">Element with locator '//input[@id="newButtonName"]' not found.</msg>
+<status status="FAIL" starttime="20230314 19:26:21.136" endtime="20230314 19:26:21.199"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="updatingButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230314 19:26:21.200" endtime="20230314 19:26:21.200"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>//button[@id="updatingButton"]</arg>
+<arg>${name}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20230314 19:26:21.201" endtime="20230314 19:26:21.201"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230314 19:26:21.202" endtime="20230314 19:26:21.202"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230314 19:26:21.203" endtime="20230314 19:26:24.147"/>
+</kw>
+<status status="FAIL" starttime="20230314 19:26:15.173" endtime="20230314 19:26:24.148">Element with locator '//input[@id="newButtonName"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20230314 19:26:14.986" endtime="20230314 19:26:24.150"/>
+</suite>
+<status status="FAIL" starttime="20230314 19:26:14.961" endtime="20230314 19:26:24.153"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramewok">RobotFramewok</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Inputtext">RobotFramewok.Inputtext</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
